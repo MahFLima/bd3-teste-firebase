@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BD3 Firebase</title>
+  </head>
+  <body><h1>Teste Firebase</h1></body>
+    <!-- IMPORT DO SDK DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+    <!-- IMPORT DO SDK DO FIRESTORE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+    <!-- CONEXÃO COM O FIREBASE -->
+    <script>
+      // Dados de conexão com o firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyCjRTbDOvid5GFTF-mgLdJr4uNaAfRadR4",
+        authDomain: "bd3-app-libri-mariana.firebaseapp.com",
+        projectId: "bd3-app-libri-mariana",
+        storageBucket: "bd3-app-libri-mariana.appspot.com",
+        messagingSenderId: "651607421102",
+        appId: "1:651607421102:web:0ed4a3e25d10c42fcdfd3f",
+        measurementId: "G-MRC9J0F6GJ",
+      };
+
+      // Inicializa o firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Inicializa o firestore
+      const db = firebase.firestore();
+
+      console.log(db)
+    </script>
+
+    <script src="app.js"></script>
+    
+</html>
