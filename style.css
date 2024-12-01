@@ -1,6 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   background: #d8d8d8;
-  font-family: ubuntu;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -8,22 +13,27 @@ h1{
   color: #121212;
   font-size: 2rem;
   letter-spacing: 2px;
-  margin-top: 80px;
+  margin-top: 5rem;
   text-align: center;
 }
 
 .content{
   background: #fff;
   max-width: 960px;
-  margin: 30px auto;
+  margin: 2rem auto;
   padding:  20px 30px;
   border-radius: 10px;
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-ul{
+#book-list{
   list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 li{
@@ -34,7 +44,6 @@ li{
   color: #555;
   position: relative;
   border-bottom: 1px solid #e6e6e6;
-  height: 46px;
 }
 
 li:nth-child(even){
